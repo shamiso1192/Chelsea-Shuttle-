@@ -3,18 +3,22 @@
 <head>
   <title>Chelsea Shuttles | Home</title>
 </head>
-<body>
+<body style="margin:0; font-family: Arial, sans-serif; background-color:#e6f3ff;">
 
-  <table width="100%" height="70%" cellspacing="50" cellpadding="50%">
+  <!-- Header -->
+  <table width="100%" height="70%" cellspacing="10" cellpadding="30%">
     <tr>
-      <td background="./Images/vans.jpg" align="center" valign="middle" >
+      <td background="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\front of the bus.avif" align="center" valign="middle">
         <font size="7" color="blue">
           Welcome to Chelsea Shuttles
         </font>
+         <div style="background; padding:10px; text-align:center; border-bottom:1px solid #004466;">
+    <p>[ Home | About | Services | Booking | Pricing | Contact]</p>
+  </div>
       </td>
     </tr>
   </table>
-
+  <!-- Who we are -->
   <h2>Who we are!</h2>
   <h3>
     Chelsea Shuttles is a trusted passenger and goods transport service connecting Cape Town 
@@ -24,6 +28,7 @@
     and every client is treated with care.
   </h3>
 
+  <!-- Services -->
   <h2>Our services</h2>
   <ul>
     <li>Intercity travel</li>
@@ -33,22 +38,91 @@
     <li>Parcel delivery services</li>
     <li>Cross-border shipping</li>
   </ul>
-  <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\good ready to be transported..avif" width="50%"></img>
-  <p>Whether you’re travelling for business, visiting family, or sending goods home, Chelsea Shuttles is here to make the journey smooth and memorable</p> 
-<b> <h2>CONTACT US</h2> </b>
-<p>
-<p>📍 Address: Cape Town, Western Cape, South Africa (Exact pickup point provided upon booking)</p>
-<p>📞 Phone / WhatsApp: +27 73 719 7959 </p>
-<p>📧 Email: [chelseashuttles@gmail.com]</p>
-<p>💬 Facebook: Chelsea Shuttles on Facebook (https://www.facebook.com/chelsea.shuttles/) </p>
+  <img src="Images\good ready to be transported..avif" width="30%"> <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\front of the bus.avif" width="20%"> <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\vans.jpg" width="20%"> <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\goods.jpg" width="20%">
+  <p>
+    Whether you’re travelling for business, visiting family, or sending goods home, Chelsea Shuttles is here to make the journey smooth and memorable.
+  </p> 
 
-<b> <h3> TESTIMONIALS </h3> </b>
-<p> <lu>"Best shuttle service I’ve used — always on time, friendly drivers, and my goods arrived safely!" – T. Moyo </lu> <br>
+  <!-- Contact Us Section -->
+  <h2>CONTACT US</h2>
+  <p>📍 Address: Cape Town, Western Cape, South Africa (Exact pickup point provided upon booking)</p>
+  <p>📞 Phone / WhatsApp: +27 73 719 7959</p>
+  <p>📧 Email: chelseashuttles@gmail.com</p>
+  <p>💬 Facebook: 
+    <a href="https://www.facebook.com/chelsea.shuttles/" target="_blank">Chelsea Shuttles on Facebook</a>
+  </p>
 
-<lu>"Travelling from Cape Town to Zimbabwe has never been this comfortable and affordable. Highly recommended!" – R. Chikanda  </lu>   </br>           
+  <!-- Contact Us Form -->
+  <h3>Send us a message / Booking Request</h3>
+  <form action="mailto:chelseashuttles@gmail.com" method="post" enctype="text/plain">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
 
-<video width="560" height="315" controls>
+    <label for="lname">Surname:</label><br>
+    <input type="text" id="lname" name="lname" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="from">From:</label><br>
+    <input type="text" id="from" name="from" required><br><br>
+
+    <label for="to">To:</label><br>
+    <input type="text" id="to" name="to" required><br><br>
+
+    <label for="date">Travel Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+  </form>
+
+  <!-- Pricing Table -->
+  <h2>Pricing for Goods Transport</h2>
+  <table border="1" cellpadding="10" cellspacing="0" width="60%">
+    <tr>
+      <th>Weight (kg)</th>
+      <th>Price per kg (ZAR)</th>
+    </tr>
+    <tr>
+      <td>25 - 50 kg</td>
+      <td>R15 per kg</td>
+    </tr>
+    <tr>
+      <td>51 - 100 kg</td>
+      <td>R12 per kg</td>
+    </tr>
+    <tr>
+      <td>101 - 200 kg</td>
+      <td>R10 per kg</td>
+    </tr>
+    <tr>
+      <td>201 kg +</td>
+      <td>R8 per kg</td>
+    </tr>
+  </table>
+  <br>
+  <button onclick="alert('Filter option coming soon!')">Filter</button>
+
+  <!-- Testimonials -->
+  <h3>TESTIMONIALS</h3>
+  <p><i>"Best shuttle service I’ve used — always on time, friendly drivers, and my goods arrived safely!" – T. Moyo</i></p>
+  <p><i>"Travelling from Cape Town to Zimbabwe has never been this comfortable and affordable. Highly recommended!" – R. Chikanda</i></p>
+
+  <!-- Video -->
+  <video width="1000" height="220" controls>
     <source src="./videos/video_preview_h264.mp4" type="video/mp4">
   </video>
+
+    <!-- Footer -->
+  <footer style="background-color:#004466; color:white; text-align:center; padding:20px; margin-top:20px;">
+    <p>&copy; 2025 Chelsea Shuttles | Cape Town, Western Cape, South Africa</p>
+    <p>📞 +27 73 719 7959 | 📧 chelseashuttles@gmail.com</p>
+    <p>Follow us on Facebook: 
+      <a href="https://www.facebook.com/chelsea.shuttles/" target="_blank" style="color:white;">Chelsea Shuttles</a>
+    </p>
+  </footer>
+
 </body>
 </html>
+
