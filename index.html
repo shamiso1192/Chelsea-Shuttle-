@@ -1,158 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chelsea Shuttles | Home</title>
+  <link rel="stylesheet" href="C:\Users\shami\OneDrive\Desktop\chelseashuttles\style.css">
 </head>
-<body style="margin:0; font-family: Arial, sans-serif; background-color:#e6f3ff;">
-
-  <!-- Header -->
-  <table width="100%" height="70%" cellspacing="10" cellpadding="30%">
-    <tr>
-      <td background="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\front of the bus.avif" align="center" valign="middle">
-        <font size="7" color="blue">
-          Welcome to Chelsea Shuttles
-        </font>
-        <div style="padding:10px; text-align:center; border-bottom:1px solid #004466;">
-          <p>[ Home | About | Services | Booking | Pricing | Contact]</p>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <!-- Who we are -->
-  <h2>Who we are!</h2>
-  <h3>
-    Chelsea Shuttles is a trusted passenger and goods transport service connecting Cape Town 
-    with major destinations across Zimbabwe. We are committed to offering safe, reliable, and 
-    comfortable travel, making long-distance journeys stress-free for our passengers. With years 
-    of experience on the road, our friendly drivers and dedicated team ensure every trip is on time 
-    and every client is treated with care.
-  </h3>
-
-  <!-- Services -->
-  <h2>Our services</h2>
-  <ul>
-    <li>Intercity travel</li>
-    <li>Inter-city Shuttles</li>
-    <li>Long distance tours</li>
-    <li>Inter-country logistics</li>
-    <li>Parcel delivery services</li>
-    <li>Cross-border shipping</li>
+<body>
+  <!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="Chelsea Shuttles Logo" class="logo-img">
+    Chelsea Shuttles
+  </div>
+  <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#routes">Routes</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
-  <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\good ready to be transported..avif" width="30%"> 
-  <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\taxi&trailer.jpg" width="20%"> 
-  <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\vans.jpg" width="20%"> 
-  <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\front of the bus.avif" width="20%">
-  <p>
-    Whether you’re travelling for business, visiting family, or sending goods home, Chelsea Shuttles is here to make the journey smooth and memorable.
-  </p> 
+</nav>
 
-  <!-- Contact Us Form -->
-  <h3>Send us a message / Booking Request</h3>
-  <form action="mailto:chelseashuttles@gmail.com" method="post" enctype="text/plain">
-    <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname" required><br><br>
 
-    <label for="lname">Surname:</label><br>
-    <input type="text" id="lname" name="lname" required><br><br>
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Chelsea Shuttles</h1>
+      <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\envato-labs-ai-bce39137-838d-4233-934a-5ed8f74d7535 (1).jpg"/>
+      <p class="motto">"Connecting Cape Town to Zimbabwe with Safety, Comfort, and Care"</p>
+    </div>
+  </header>
 
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1>About Us</h1>
+    <div class="about-content">
+      <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\Logo 2.jpg" alt="About Chelsea Shuttles">
+      <b <p>
+        Chelsea Shuttles is a trusted passenger and goods transport service connecting Cape Town 
+        with major destinations across Zimbabwe. We are committed to offering safe, reliable, and 
+        comfortable travel, making long-distance journeys stress-free for our passengers.
+      </p></b>>
+    </div>
+  </section>
 
-    <label for="from">From:</label><br>
-    <input type="text" id="from" name="from" required><br><br>
+  <!-- Routes & Pricing Section -->
+<section id="routes" class="section">
+  <h2>Our Routes & Pricing</h2>
+  <div class="routes-container">
 
-    <label for="to">To:</label><br>
-    <input type="text" id="to" name="to" required><br><br>
+    <div class="route-card" style="background: linear-gradient(135deg, #0a4d68, #00cc66); color:white;">
+      <img src="images/route1.jpg" alt="Cape Town via Masvingo">
+      <h3>Route 1</h3>
+      <p>Cape Town → Masvingo</p>
+      <p class="price">R1800 per person</p>
+      <button class="btn book-btn" data-route="Cape Town → Masvingo">Book Now</button>
+    </div>
 
-    <label for="date">Travel Date:</label><br>
-    <input type="date" id="date" name="date" required><br><br>
+    <div class="route-card" style="background: linear-gradient(135deg, #198754, #0a4d68); color:white;">
+      <img src="images/route2.jpg" alt="Cape Town via Zvishavane">
+      <h3>Route 2</h3>
+      <p>Cape Town → Zvishavane</p>
+      <p class="price">R1800 per person</p>
+      <button class="btn book-btn" data-route="Cape Town → Zvishavane">Book Now</button>
+    </div>
 
-    <input type="submit" value="Submit">
-    <input type="reset" value="Clear">
-  </form>
+    <div class="route-card" style="background: linear-gradient(135deg, #00cc66, #198754); color:white;">
+      <img src="images/route3.jpg" alt="Cape Town via Gweru">
+      <h3>Route 3</h3>
+      <p>Cape Town → Gweru</p>
+      <p class="price">R1800 per person</p>
+      <button class="btn book-btn" data-route="Cape Town → Gweru">Book Now</button>
+    </div>
 
-  <!-- Pricing Table -->
-  <h2>Pricing for Goods Transport</h2>
-  <table border="1" cellpadding="10" cellspacing="0" width="60%">
-    <tr>
-      <th>Weight (kg)</th>
-      <th>Price per kg (ZAR)</th>
-    </tr>
-    <tr>
-      <td>25 - 50 kg</td>
-      <td>R15 per kg</td>
-    </tr>
-    <tr>
-      <td>51 - 100 kg</td>
-      <td>R12 per kg</td>
-    </tr>
-    <tr>
-      <td>101 - 200 kg</td>
-      <td>R10 per kg</td>
-    </tr>
-    <tr>
-      <td>201 kg +</td>
-      <td>R8 per kg</td>
-    </tr>
-  </table>
-  <br>
-  <button onclick="alert('Filter option coming soon!')">Filter</button>
+    <div class="route-card" style="background: linear-gradient(135deg, #0a4d68, #00994d); color:white;">
+      <img src="images/route4.jpg" alt="Bulawayo Route">
+      <h3>Route 4</h3>
+      <p>Cape Town → Bulawayo</p>
+      <p class="price">R1800 per person</p>
+      <button class="btn book-btn" data-route="Cape Town → Bulawayo">Book Now</button>
+    </div>
 
-    <!-- Bus Schedule -->
-  <h2 style="color:#004466; text-align:center; margin-top:40px;">Bus Schedule</h2>
-  <table border="1" cellpadding="12" cellspacing="0" width="70%" align="center" style="font-family:Arial, sans-serif; border-collapse:collapse;">
-    <tr style="background-color:#004466; color:white; text-align:center; font-size:18px;">
-      <th>Day</th>
-      <th>Route</th>
-      <th>Departure Time</th>
-      <th>Arrival Time</th>
-    </tr>
-    <tr style="background-color:#f9f9f9; text-align:center;">
-      <td>Sunday</td>
-      <td>Cape Town → Harare</td>
-      <td>08:00 AM</td>
-      <td>Tuesday (Morning)</td>
-    </tr>
-    <tr style="background-color:#ffffff; text-align:center;">
-      <td>Thursday</td>
-      <td>Harare → Cape Town</td>
-      <td>08:00 AM</td>
-      <td>Saturday (Morning )</td>
-    </tr>
-  </table>
-
-  <!-- Ticket Price -->
-  <h3 style="text-align:center; color:#004466; margin-top:15px;">
-    🎟️ Bus Ticket Price: R1800 (one way, Cape Town ↔ Harare)
-  </h3>
-
-  <!-- Luggage Policy -->
-  <div style="text-align:center; margin:20px auto; width:70%; font-family:Arial, sans-serif; background-color:#f2f9ff; border:1px solid #004466; padding:15px; border-radius:8px;">
-    <h3 style="color:#004466;">🛄 Luggage Policy</h3>
-    <p>✅ Each passenger is allowed <b>10kg free hand luggage</b>.</p>
-    <p>✅ Each passenger is also allowed <b>23kg checked luggage</b> at no extra cost.</p>
-    <p>⚠️ Anything above the allowed limit will be charged separately.</p>
   </div>
 
-  <!-- Testimonials -->
-  <h3>TESTIMONIALS</h3>
-  <p><i>"Best shuttle service I’ve used — always on time, friendly drivers, and my goods arrived safely!" – T. Moyo</i></p>
-  <p><i>"Travelling from Cape Town to Zimbabwe has never been this comfortable and affordable. Highly recommended!" – R. Chikanda</i></p>
+  <!-- Luggage Policy Bubble -->
+  <div class="luggage-bubble">
+    <h3>Luggage Policy</h3>
+    <p>🛄 Luggage starts from <strong>R300</strong> per bag</p>
+  </div>
+</section>
 
-  <!-- Video -->
-  <video width="1000" height="220" controls>
-    <source src="./videos/video_preview_h264.mp4" type="video/mp4">
-  </video>
+
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\front of the bus.avif" alt="Intercity Travel">
+        <h3>Intercity Travel</h3>
+        <p>Comfortable trips between major cities.</p>
+      </div>
+      <div class="service-card">
+        <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\envato-labs-ai-bce39137-838d-4233-934a-5ed8f74d7535 (1).jpg" alt="Long Distance Tours">
+        <h3>Long Distance Tours</h3>
+        <p>Safe, enjoyable tours across South Africa & Zimbabwe.</p>
+      </div>
+      <div class="service-card">
+        <img src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\Images\good ready to be transported..avif" alt="Parcel Delivery">
+        <h3>Parcel Delivery</h3>
+        <p>Fast and secure parcel & goods transport across borders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Book Your Trip</h2>
+      <form id="bookingForm" method="POST" action="send_booking.php">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="from" placeholder="Travel From" required>
+        <input type="text" name="to" placeholder="Travel To" required>
+        <input type="date" name="date" required>
+        <textarea name="message" placeholder="Special Requests"></textarea>
+        <button type="submit" class="btn">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <p>📍 Cape Town, Western Cape, South Africa</p>
+        <p>📞 +27 73 719 7959</p>
+        <p>📧 chelseashuttles@gmail.com</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form id="contactForm" method="POST" action="send_booking.php">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer style="background-color:#004466; color:white; text-align:center; padding:20px; margin-top:20px;">
-    <p>&copy; 2025 Chelsea Shuttles | Cape Town, Western Cape, South Africa</p>
-    <p>📞 +27 73 719 7959 | 📧 chelseashuttles@gmail.com</p>
-    <p>Follow us on Facebook: 
-      <a href="https://www.facebook.com/chelsea.shuttles/" target="_blank" style="color:white;">Chelsea Shuttles</a>
-    </p>
+  <footer>
+    <p>&copy; 2025 Chelsea Shuttles. All Rights Reserved.</p>
   </footer>
 
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/27737197959" target="_blank" class="whatsapp-float">💬</a>
+
+  <script src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\script.js"></script>
 </body>
 </html>
