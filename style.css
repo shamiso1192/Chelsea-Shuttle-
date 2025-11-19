@@ -919,7 +919,9 @@ body {
   box-shadow: 0 10px 35px rgba(37, 211, 102, 0.6);
 }
 
+
 /* Modal */
+/* Fixed modal display visibility */
 .modal {
   display: none;
   position: fixed;
@@ -941,6 +943,7 @@ body {
   }
 }
 
+/* Ensure modal content appears on top and is visible */
 .modal-content {
   background-color: var(--white);
   margin: 10% auto;
@@ -950,6 +953,8 @@ body {
   max-width: 500px;
   animation: slideIn 0.3s ease;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 @keyframes slideIn {
@@ -969,5 +974,175 @@ body {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  transition 
+  transition: all 0.3s ease; /* Completed from original snippet */
+}
+
+.close:hover,
+.close:focus {
+  color: var(--dark);
+}
+
+/* Added booking form styling */
+.modal-content h2 {
+  color: var(--primary-blue);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid var(--light-gray);
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 12px rgba(10, 77, 104, 0.2);
+}
+
+/* Form buttons styling */
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-whatsapp,
+.btn-email {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--white);
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-email {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+  box-shadow: 0 4px 15px rgba(10, 77, 104, 0.2);
+}
+
+.btn-email:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 77, 104, 0.3);
+}
+
+.btn-email:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Response message styling for success and error feedback */
+.response-message {
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.response-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 4px solid #28a745;
+}
+
+.response-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-left: 4px solid #f5c6cb;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 25px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    padding: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .services-fleet-wrapper {
+    gap: 40px;
+  }
+
+  .tier-card.featured {
+    transform: scale(1);
+  }
+
+  .tier-card.featured:hover {
+    transform: translateY(-8px);
+  }
+}
+
+
 }
