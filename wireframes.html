@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea Shuttles - Wireframes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .wireframe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0a4d68;
+        }
+        .wireframe-section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            background-color: #0a4d68;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+        .desktop-wireframe, .mobile-wireframe {
+            background-color: white;
+            border: 2px solid #0a4d68;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .wireframe-box {
+            border: 1px dashed #198754;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .wireframe-box.header {
+            background-color: #0a4d68;
+            color: white;
+            margin: 0;
+            border: none;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .wireframe-box.hero {
+            background-color: #e8f4f8;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .wireframe-box.section-header {
+            background-color: #0a4d68;
+            color: white;
+            margin: 0;
+            border: none;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 0 10px 10px 10px;
+        }
+        .grid-item {
+            border: 1px dashed #198754;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+            color: #666;
+            border-radius: 4px;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            border: none;
+        }
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .legend {
+            background-color: white;
+            border: 2px solid #198754;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .legend-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <h1>Chelsea Shuttles - Website Wireframes</h1>
+        
+        <div class="legend">
+            <h3>Color Legend & Layout</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #0a4d68;"></div>
+                <span>Primary Blue - Headers & Main Elements</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #198754;"></div>
+                <span>Green - Accent & Interactive Elements</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #1a1a1a;"></div>
+                <span>Black - Footer & Text</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #25d366;"></div>
+                <span>WhatsApp Green - Floating Action Button</span>
+            </div>
+        </div>
+
+        <!-- DESKTOP WIREFRAME -->
+        <div class="wireframe-section">
+            <div class="section-title">Desktop View</div>
+            <div class="desktop-wireframe">
+                <!-- Header/Navigation -->
+                <div class="wireframe-box header">
+                    <div style="font-weight: bold;">LOGO | Chelsea Shuttles</div>
+                    <div>Home | About | Services | Routes | Contact</div>
+                    <div style="background-color: #198754; padding: 8px 16px; border-radius: 4px;">Book Now</div>
+                </div>
+
+                <!-- Hero Section -->
+                <div class="wireframe-box hero">
+                    <div>
+                        <h2 style="margin-bottom: 10px;">Hero Section with Background Image</h2>
+                        <p>Welcome to Chelsea Shuttles - Safe, Reliable & Affordable Travel</p>
+                        <div style="margin-top: 15px; background-color: #198754; color: white; padding: 10px 20px; display: inline-block; border-radius: 4px;">Book Your Journey</div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="wireframe-box section-header">About Us</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h4>Short & Long Distance</h4>
+                        <p style="font-size: 12px;">Travel with comfort</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Free WiFi Onboard</h4>
+                        <p style="font-size: 12px;">Stay connected</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Cargo Services</h4>
+                        <p style="font-size: 12px;">Doorstep delivery</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Professional Drivers</h4>
+                        <p style="font-size: 12px;">Certified & safe</p>
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <div class="wireframe-box section-header">Our Services</div>
+                <div class="grid-container">
+                    <div class="grid-item">Long Distance Travel</div>
+                    <div class="grid-item">Cargo Transport</div>
+                    <div class="grid-item">Passenger Service</div>
+                    <div class="grid-item">Online Booking</div>
+                </div>
+
+                <!-- Routes Section -->
+                <div class="wireframe-box section-header">Routes & Pricing</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <strong>Cape Town to Harare</strong><br>
+                        Sunday 3:00 PM<br>
+                        R850/Person
+                    </div>
+                    <div class="grid-item">
+                        <strong>Zimbabwe to Cape Town</strong><br>
+                        Return Journey<br>
+                        R850/Person
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="wireframe-box section-header">Our Fleet Gallery</div>
+                <div class="grid-container" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="grid-item">Fleet Image</div>
+                    <div class="grid-item">Goods Image</div>
+                    <div class="grid-item">Bus Image</div>
+                    <div class="grid-item">Taxi Image</div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="wireframe-box section-header">Contact & Booking</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <strong>Contact Info</strong><br>
+                        Email: chelseashuttles@gmail.com<br>
+                        Phone: 0737197959
+                    </div>
+                    <div class="grid-item">
+                        <strong>Quick Contact Form</strong><br>
+                        Name, Email, Message<br>
+                        Submit Button
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="wireframe-box footer">
+                    © 2025 Chelsea Shuttles | www.chelseashuttles.co.za | Travel Between Cape Town and Zimbabwe
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE WIREFRAME -->
+        <div class="wireframe-section">
+            <div class="section-title">Mobile View (Responsive)</div>
+            <div class="mobile-wireframe" style="max-width: 375px;">
+                <!-- Header/Navigation -->
+                <div class="wireframe-box header" style="flex-direction: column; padding: 15px;">
+                    <div style="font-weight: bold; margin-bottom: 10px;">LOGO | Chelsea Shuttles</div>
+                    <div style="display: flex; gap: 10px; width: 100%;">
+                        <div style="flex: 1; padding: 5px; border: 1px solid white; border-radius: 3px; font-size: 12px;">Home</div>
+                        <div style="flex: 1; padding: 5px; border: 1px solid white; border-radius: 3px; font-size: 12px;">About</div>
+                        <div style="flex: 1; padding: 5px; border: 1px solid white; border-radius: 3px; font-size: 12px;">Contact</div>
+                    </div>
+                </div>
+
+                <!-- Hero Section -->
+                <div class="wireframe-box hero" style="min-height: 150px;">
+                    <div style="text-align: center;">
+                        <p style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Hero Section</p>
+                        <p style="font-size: 12px;">Safe, Reliable & Affordable</p>
+                        <div style="margin-top: 10px; background-color: #198754; color: white; padding: 8px 12px; display: inline-block; border-radius: 4px; font-size: 12px;">Book Now</div>
+                    </div>
+                </div>
+
+                <!-- Stacked Sections -->
+                <div class="wireframe-box section-header" style="font-size: 14px;">About Us</div>
+                <div class="grid-container" style="grid-template-columns: 1fr;">
+                    <div class="grid-item" style="padding: 20px;">Short & Long Distance</div>
+                    <div class="grid-item" style="padding: 20px;">Free WiFi Onboard</div>
+                    <div class="grid-item" style="padding: 20px;">Cargo Services</div>
+                    <div class="grid-item" style="padding: 20px;">Professional Drivers</div>
+                </div>
+
+                <div class="wireframe-box section-header" style="font-size: 14px;">Services</div>
+                <div class="grid-container" style="grid-template-columns: 1fr;">
+                    <div class="grid-item">Long Distance Travel</div>
+                    <div class="grid-item">Cargo Transport</div>
+                    <div class="grid-item">Passenger Service</div>
+                    <div class="grid-item">Online Booking</div>
+                </div>
+
+                <div class="wireframe-box section-header" style="font-size: 14px;">Routes</div>
+                <div class="grid-container" style="grid-template-columns: 1fr;">
+                    <div class="grid-item" style="font-size: 12px;">
+                        <strong>CT to Harare</strong><br>Sun 3:00 PM<br>R850
+                    </div>
+                    <div class="grid-item" style="font-size: 12px;">
+                        <strong>Zimbabwe to CT</strong><br>Return<br>R850
+                    </div>
+                </div>
+
+                <div class="wireframe-box section-header" style="font-size: 14px;">Gallery</div>
+                <div class="grid-container" style="grid-template-columns: 1fr;">
+                    <div class="grid-item">Fleet Image</div>
+                    <div class="grid-item">Goods Image</div>
+                    <div class="grid-item">Bus Image</div>
+                    <div class="grid-item">Taxi Image</div>
+                </div>
+
+                <div class="wireframe-box section-header" style="font-size: 14px;">Contact</div>
+                <div class="grid-container" style="grid-template-columns: 1fr;">
+                    <div class="grid-item" style="font-size: 12px;">
+                        <strong>Contact Us</strong><br>
+                        chelseashuttles@gmail.com<br>
+                        0737197959
+                    </div>
+                    <div class="grid-item" style="font-size: 12px;">
+                        <strong>Quick Form</strong><br>
+                        Name, Email, Message
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="wireframe-box footer" style="font-size: 11px;">
+                    © 2025 Chelsea Shuttles
+                </div>
+            </div>
+        </div>
+
+        <!-- KEY FEATURES WIREFRAME -->
+        <div class="wireframe-section">
+            <div class="section-title">Key Interactive Features</div>
+            <div style="background-color: white; padding: 20px; border-radius: 8px; border: 2px solid #0a4d68;">
+                <div style="margin-bottom: 20px;">
+                    <h3 style="color: #0a4d68; margin-bottom: 10px;">1. WhatsApp Floating Action Button (FAB)</h3>
+                    <div style="background-color: #f5f5f5; padding: 15px; border-radius: 4px; border-left: 4px solid #25d366;">
+                        <span style="display: inline-block; width: 60px; height: 60px; background-color: #25d366; color: white; border-radius: 50%; text-align: center; line-height: 60px; font-size: 24px;">📱</span>
+                        <p style="margin-top: 10px;">Fixed in bottom-right corner. Links directly to WhatsApp: <strong>0737197959</strong></p>
+                    </div>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h3 style="color: #0a4d68; margin-bottom: 10px;">2. Booking Modal with AJAX</h3>
+                    <div style="background-color: #f5f5f5; padding: 15px; border-radius: 4px; border-left: 4px solid #198754;">
+                        <p><strong>Form Fields:</strong> Name, Email, Phone, Passengers, Route, Date</p>
+                        <p style="margin-top: 10px;"><strong>Submission Options:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Book via WhatsApp - Sends data to 0737197959</li>
+                            <li>Book via Email - Sends data to chelseashuttles@gmail.com</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>AJAX Response:</strong> Real-time feedback without page reload</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #0a4d68; margin-bottom: 10px;">3. Color Scheme</h3>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                        <div style="background-color: #0a4d68; color: white; padding: 15px; border-radius: 4px; text-align: center;"><strong>Primary Blue</strong><br>#0a4d68</div>
+                        <div style="background-color: #198754; color: white; padding: 15px; border-radius: 4px; text-align: center;"><strong>Green</strong><br>#198754</div>
+                        <div style="background-color: #000000; color: white; padding: 15px; border-radius: 4px; text-align: center;"><strong>Black</strong><br>#000000</div>
+                        <div style="background-color: #ffffff; color: black; padding: 15px; border-radius: 4px; text-align: center; border: 1px solid #ccc;"><strong>White</strong><br>#ffffff</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp-fab" title="Floating Action Button Example">💬</div>
+</body>
+</html>

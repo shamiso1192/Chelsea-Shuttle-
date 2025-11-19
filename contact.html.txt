@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Chelsea Shuttles</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact Chelsea Shuttles for safe and reliable transport services between Cape Town and Zimbabwe. Visit us at 243 Voortrekker Road, Maitland, Cape Town.">
+  <meta name="keywords" content="Chelsea Shuttles, Cape Town shuttle, 243 Voortrekker Road Maitland, transport, travel, Zimbabwe, parcel delivery, booking">
+  <meta name="author" content="Chelsea Shuttles">
+
+  <link rel="stylesheet" href="C:\Users\shami\OneDrive\Desktop\chelseashuttles\style.css" />
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f8ff; margin: 0;">
+
+  <!-- Navbar -->
+  <nav style="background-color:#004466; padding:15px; text-align:center;">
+    <a href="C:\Users\shami\OneDrive\Desktop\chelseashuttles\index.html" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
+    <a href="contact.html" style="color:#00ccff; margin:0 15px; text-decoration:none;">Contact</a>
+  </nav>
+
+  <!-- Contact Section -->
+  <section style="padding:30px; text-align:center;">
+    <h2 style="color:#004466;">Contact Us</h2>
+    <p>We’d love to hear from you! Visit or reach out using the details below.</p>
+
+    <div style="margin:20px auto; width:70%; text-align:left; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <h3>📍 Our Office</h3>
+      <p><b>Address:</b> 243 Voortrekker Road, Maitland, Cape Town, South Africa</p>
+      <p><b>Phone:</b> +27 73 719 7959</p>
+      <p><b>Email:</b> <a href="mailto:chelseashuttles@gmail.com">chelseashuttles@gmail.com</a></p>
+      <p><b>Facebook:</b> <a href="https://www.facebook.com/chelsea.shuttles/" target="_blank">Chelsea Shuttles</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <div style="margin:30px auto; width:70%; background:#f9f9f9; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <h3>Send us a message</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required style="width:100%; padding:10px; margin:8px 0;">
+        <input type="email" id="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:8px 0;">
+        <textarea id="message" rows="5" placeholder="Your Message" required style="width:100%; padding:10px; margin:8px 0;"></textarea>
+        <button type="submit" style="background-color:#004466; color:white; padding:10px 20px; border:none; border-radius:5px;">Send Message</button>
+        <p id="formResponse" style="color:green; margin-top:10px;"></p>
+      </form>
+    </div>
+
+    <!-- Google Map Embed -->
+    <h3 style="margin-top:30px; color:#004466;">Find Us on the Map</h3>
+    <iframe
+      src="https://www.google.com/maps?q=243+Voortrekker+Road,+Maitland,+Cape+Town,+South+Africa&output=embed"
+      width="80%"
+      height="350"
+      style="border:0; border-radius:10px; margin-top:10px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer style="background-color:#004466; color:white; text-align:center; padding:20px;">
+    <p>&copy; 2025 Chelsea Shuttles | 243 Voortrekker Road, Maitland, Cape Town, South Africa</p>
+  </footer>
+
+  <script src="C:\Users\shami\OneDrive\Desktop\chelseashuttles\script.js"></script>
+</body>
+</html>
