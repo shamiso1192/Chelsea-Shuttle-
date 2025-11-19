@@ -40,7 +40,7 @@ window.addEventListener("click", (event) => {
   }
 })
 
-// Handle WhatsApp submission with AJAX
+/ Handle WhatsApp submission with AJAX
 whatsappSubmit.addEventListener("click", (e) => {
   e.preventDefault()
   
@@ -54,11 +54,9 @@ whatsappSubmit.addEventListener("click", (e) => {
 
   console.log("[v0] Form validation passed, collecting data...")
   
-  const whatsappMessage = `*New Booking Request*%0A%0ARoute: ${selectedRoute}%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0ADate: ${formData.date}%0APassengers: ${formData.passengers}%0AMessage: ${formData.message}`
-
-    // Open WhatsApp
-    window.open(`https://wa.me/27737197959?text=${whatsappMessage}`, "_blank")
-
+  const originalText = whatsappSubmit.textContent
+  whatsappSubmit.textContent = "Processing..."
+  whatsappSubmit.disabled = true
 
   // Collect form data
   const name = document.getElementById("name").value
@@ -198,4 +196,5 @@ function initDecemberChart() {
 
 // Initialize chart on page load
 document.addEventListener('DOMContentLoaded', initDecemberChart);
+
 
