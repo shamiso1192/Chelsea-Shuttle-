@@ -50,7 +50,7 @@ whatsappSubmit.addEventListener("click", (e) => {
   const route = document.getElementById("route").value
   const date = document.getElementById("date").value
 
-  fetch("C:\Users\shami\OneDrive\Desktop\chelseashuttles\process-booking.php", {
+  fetch("process-booking.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -107,7 +107,7 @@ emailSubmit.addEventListener("click", (e) => {
   const route = document.getElementById("route").value
   const date = document.getElementById("date").value
 
-  fetch("C:\Users\shami\OneDrive\Desktop\chelseashuttles\send-mail.php", {
+  fetch("send-mail.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -209,4 +209,5 @@ function initDecemberChart() {
 
 // Initialize chart on page load
 document.addEventListener('DOMContentLoaded', initDecemberChart);
+
 
