@@ -116,3 +116,4 @@ if ($sentToAdmin && $sentToCustomer) {
     echo json_encode(['success' => false, 'message' => 'Failed to send email']);
 }
 ?>
+
